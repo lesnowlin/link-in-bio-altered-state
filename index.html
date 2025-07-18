@@ -21,15 +21,19 @@
       box-shadow: 0 2px 16px rgba(0,0,0,0.04);
       background: #fff;
     }
-    .artwork {
-      width: 120px;
-      height: 120px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 3px solid #e0e0e0;
-      margin-top: 16px;
-      margin-bottom: 16px;
-    }
+   .artwork {
+  width: 100%; max-width: 400px;
+  height: auto; /* maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 16px; /* softer rectangle corners; use 0 for perfectly square */
+  border: 3px solid #e0e0e0;
+  margin-bottom: 24px;
+  margin-top: 0;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
     h1 {
       margin: 8px 0 4px 0;
       font-size: 2em;
@@ -85,6 +89,7 @@
     <!-- Artwork/Profile photo -->
     <img src="images/LNB-1.jpg" alt="Artwork" class="artwork">
     
+    
     <!-- Your Name -->
     <h1>Lesley Nowlin Blessing</h1>
     
@@ -95,8 +100,8 @@
     
     <!-- Main Links -->
     <div class="links">
-      <a href="https://lesleynowlinblessing.com/" target="_blank">🌐 My Website</a>
-      <a href="https://voyageaustin.com/interview/check-out-lesley-nowlin-blessings-story" target="_blank">Voyage Austin Magazine</a>
+      <a href="https://lesleynowlinblessing.com/" target="_blank"> My Website</a>
+      <a href="https://voyageaustin.com/interview/check-out-lesley-nowlin-blessings-story" target="_blank">Check Out Lesley Nowlin Blessing’s Story in Voyage Austin Magazine</a>
       <a href="https://www.zachtheater.org/" target="_blank">Altered State Exhibition at Zach Theatre- Aug.12-Sept.21 Reception Aug.14 6-7:30pm </a>
       <!-- Add more links as needed -->
     </div>
