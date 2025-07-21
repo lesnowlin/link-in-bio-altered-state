@@ -22,7 +22,23 @@ body {
       margin: 0;
       padding: 0;
     }
-    
+    body {
+  background: url('images/email LNB.jpg') no-repeat center center fixed;
+  background-size: contain;
+  opacity: 0.1; /* This doesn't affect child elements, so use RGBA for real opacity control */
+}
+
+/* Better: Use a pseudo-element for opacity */
+body::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: url('images/email LNB.jpg') no-repeat center center;
+  background-size: contain;
+  opacity: 0.1; /* Adjust for desired watermark effect */
+  pointer-events: none; /* So it doesn't block clicks */
+  z-index: -1;
+}
     .container {
       max-width: 400px;
       margin: 40px auto;
@@ -101,7 +117,7 @@ body {
     
     
     <!-- Your Name -->
-    <h1>LESLEY NOWLIN BLESSING</h1>
+    <h1>Lesley Nowlin Blessing</h1>
     
     <!-- About Me -->
     <div class="about"> Lesley Nowlin Blessing is a Texas-born artist whose decades-long career in photography was first sparked by her father’s passion for the medium. After earning her BFA from the Hartford Art School, she returned to her home state, where the people and landscapes of the Texas Hill Country continue to shape her work. Altered State is a continuation of work that questions an exploration of consciousness and the energetic ebb and flow of life. Using photography, double exposure, delicate gilding, and illustration, Altered State displays movement and energy, even in moments of stillness, creating a shimmering, living quality just beneath the surface.
